@@ -39,6 +39,7 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 520</div>
+                <h4><a href="{{ action("NoteController@index") }}">进入留言板</a></h4>
             </div>
         </div>
     </body>
