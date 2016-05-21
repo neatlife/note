@@ -21,3 +21,7 @@ Route::get('/520/{sweet}', function($sweet) {
 	// app/routes.php
 	return View::make('hello', ['sweet' => $sweet]);
 });
+
+Route::get('/notes', ['uses' => 'NoteController@index']);
+Route::get('/note-add', ['uses' => 'NoteController@add']);
+Route::post('/note-save', ['as' => 'note-adve', 'uses' => 'NoteController@save']);
